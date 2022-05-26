@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="JS.js"></script>
+
+</head>
+<body>
+    <nav id="top_nav">
+        <a href="home.html" class="nav">Home</a>
+        <a href="football.html" class="nav">Football</a>
+        <a href="swim.html" class="nav">Swiming</a>
+        <a href="cycling.html" class="nav">Cycling</a>
+        <!-- <a href="login.html" class="nav">join us</a> -->
+    </nav>
+    <h1 class="header" id="test">the competition</h1>
+    <h3>Participate in our sports competition</h3>
+    <div id="error"></div>
+    <div id="log">
+      <form action="home.html" method="post" id="form">
+        <fieldset>
+          <legend>fill the form please</legend>
+
+        <label for="uname"><b>email:</b></label><br>
+      <input type="text" id="uname" placeholder="Enter email" name="uname" required  ><br>
+
+        <label for="pass"><b>password:</b></label><br>
+      <input  placeholder="Enter password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8}" id="pass" name="pass"  required ><br>
+
+        <label for="num"><b>mobile number:</b></label><br>
+      <input type="text" placeholder="Enter your mobile number" id="num" name="num" required ><br>
+
+      <label for="gender"><b>gender:</b></label><br>
+
+      <select name="gender" id="gender">
+        <option value="male" selected="selected">male</option> 
+        <option value="female">female</option>
+    </select><br>
+      <label for="sport"><b>sport:</b></label><br>
+      <select name="sport" id="sport">
+        <option value="Swiming">Swiming</option>
+        <option value="cycling">cycling</option>
+        <option value="football" selected="selected">football</option> 
+    </select>
+  </fieldset>
+  <button onclick="passChick()" type="submit" >sign up</button>
+</form>
+
+    </div>
+    <script src="JS.js"></script>
+    
+</body>
+</html>
